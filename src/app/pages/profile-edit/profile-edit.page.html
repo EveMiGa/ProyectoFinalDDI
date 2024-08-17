@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Editar Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="note-modal-content">
+  <ion-item style="margin-top: 20px;">
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="newName"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input [(ngModel)]="newEmail" type="email"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Nueva Contraseña</ion-label>
+    <ion-input [type]="showPassword ? 'text' : 'password'" [(ngModel)]="newPassword"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Confirmar Contraseña</ion-label>
+    <ion-input [type]="showConfirmPassword ? 'text' : 'password'" [(ngModel)]="confirmPassword"></ion-input>
+    <ion-button fill="clear" slot="end" (click)="togglePasswordVisibility()" style="width: auto;">
+      <ion-icon slot="icon-only" [name]="showPassword ? 'eye-off' : 'eye'" color="light"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <ion-button style="width: 100%; border-radius: 5px;" (click)="updateProfile()">Actualizar</ion-button>
+  <ion-button class="delete" style="width: 100%; border-radius: 5px;" (click)="goToHome()">Cancelar</ion-button>
+</ion-content>

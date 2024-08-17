@@ -1,0 +1,96 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+
+/* Estilo para el encabezado */
+ion-header {
+    --background: #f8f9fa; /* Fondo del encabezado */
+    --color: #333; /* Color del texto del encabezado */
+  }
+  
+  ion-toolbar {
+    --background: #6f00ff; /* Color de fondo del toolbar */
+    --color: #fff; /* Color del texto en el toolbar */
+  }
+  
+  ion-title {
+    font-size: 1.2rem; /* Tamaño de fuente del título */
+    font-weight: bold; /* Negrita en el título */
+  }
+  
+  /* Estilo para los items */
+  ion-item {
+    margin-bottom: 16px; /* Espacio entre los items */
+  }
+  
+  ion-label {
+    font-size: 1rem; /* Tamaño de fuente de las etiquetas */
+  }
+  
+  ion-input, ion-textarea {
+    --padding-start: 0; /* Sin relleno inicial */
+    --padding-end: 0; /* Sin relleno final */
+  }
+  
+  /* Estilo para el input de color */
+  ion-input[type="color"] {
+    --padding-start: 0; /* Sin relleno inicial */
+  }
+  
+  /* Contenedor de botones */
+  .button-container {
+    margin-top: 20px; /* Espacio arriba del contenedor */
+  }
+  
+  /* Estilo para el botón */
+  ion-button {
+    border-radius: 12px; /* Bordes redondeados en los botones */
+    --background: #6f00ff; /* Color de fondo del botón */
+    --color: #fff; /* Color del texto en el botón */
+  }
+
+  .delete {
+    border-radius: 12px; /* Bordes redondeados en los botones */
+    --background: #ff3939; /* Color de fondo del botón */
+    --color: #fff; /* Color del texto en el botón */
+  }
+  
+  ion-button[expand="full"] {
+    margin-top: 10px; /* Espacio arriba del botón */
+  }
+  
